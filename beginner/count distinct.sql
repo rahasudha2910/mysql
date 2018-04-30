@@ -1,0 +1,13 @@
+create database sudha;
+show databases;
+use sudha;
+create table students(name char(25),roll_no varchar(10),department char(5),college_name char(5));
+desc students;
+insert into students values("Rahasudha","15BEE085","EEE","KCT");
+insert into students values("Rahasudha","15BEE085","EEE","KCT");
+insert into students values("vinothini","15BEE214","EEE","KCT");
+insert into students values("Ananthiselvi","15BEE084","EEE","KCT");
+select * from students;
+select count(*) from students;
+select distinct * from students;
+desc students;
