@@ -1,0 +1,13 @@
+create database sudha;
+show databases;
+use sudha;
+create table students(name char(25),rollno varchar(10),department char(20));
+create table employee(name char(25),idno varchar(15),companyname char(50));
+create table production(productname char(40));
+desc students;
+desc employee;
+desc production;
+alter table students drop department;
+desc students;
+alter table production add idno varchar(15);
+desc production;
