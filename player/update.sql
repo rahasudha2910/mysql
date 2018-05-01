@@ -1,0 +1,16 @@
+create database sudha;
+show databases;
+use sudha;
+create table employee(id int(2),name char(25),age int(2),address char(15),salary int(6));
+desc employee;
+insert into employee values("1","Ramesh","32","Ahmedabad","2000");
+insert into employee values("2","Khilan","25","Delhi","1500");
+insert into employee values("3","kaushik","23","Kota","2000");
+insert into employee values("4","Chaitali","25","Mumbai","6500");
+insert into employee values("5","Hardik","27","Bhopal","8500");
+insert into employee values("6","Komal","22","MP","4500");
+insert into employee values("7","Muffy","24","Indore","10000");
+select * from employee;
+update employee set address="maharastra" where id="6";
+select * from employee;
+desc employee;
