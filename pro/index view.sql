@@ -1,0 +1,17 @@
+create database sudha;
+show databases;
+use sudha;
+create table GUVI(id int(2),name char(25),age int(2));
+desc GUVI;
+insert into GUVI values("1","Vinodini","25");
+insert into GUVI values("2","Banu","27");
+insert into GUVI values("3","kaushik","23");
+insert into GUVI values("4","Praveen","25");
+insert into GUVI values("5","kamal","22");
+insert into GUVI values("6","Malini","24");
+insert into GUVI values("7","Ramesh","32");
+select * from GUVI;
+create index idx_name on GUVI(name);
+desc GUVI;
+create view limited_edition as select * from GUVI where age='25';
+drop view limited_edition;
